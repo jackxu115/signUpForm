@@ -1,9 +1,18 @@
+$Norse_font: 'Norse-Bold.otf';
+
+@font-face {
+  font-family: $Norse_font;
+  src: url("../font/Norse-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   display: flex;
   flex-direction: row;
   margin: 0;
   color: #fefefe;
+  font-family: Ebrima;
 }
 
 .header {
@@ -22,6 +31,7 @@ body {
     width: 100%;
     background-color: rgba(100, 108, 121, 0.5);
     padding: 10px 0 10px;
+    font-family: $Norse_font;
   }
 
   &_copyright {
@@ -39,9 +49,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 
   &_heading {
-    padding: 60px 300px 0 60px;
+    padding: 30px 60px 0 60px;
     p {
       font-size: 20px;
       font-weight: bold;
@@ -53,7 +66,7 @@ body {
 
   &_content {
     background-color: #f7f7f7;
-    padding: 30px 60px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,7 +78,6 @@ body {
     &_form {
       display: flex;
       flex-direction: column;
-      gap: 30px;
 
       &_input {
         display: flex;
