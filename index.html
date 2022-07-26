@@ -9,6 +9,75 @@
     <title>Sing Up Form</title>
 </head>
 <body>
+<div class="header">
+    <div class="header_heading">
+        <h1>Sing Up Form</h1>
+    </div>
+    <div class="header_copyright">
+        <p>Photo by <span>Timothy Tan</span> on <span>Upsplash</span></p>
+    </div>
+</div>
+<div class="container">
+    <div class="container_heading">
+        <p>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+        </p>
+        <p>
+            You <span>know</span> you want to.
+        </p>
+    </div>
+    <div class="container_content">
+        <div class="container_content_heading">
+            <p>Let's do this!</p>
+        </div>
+        <div class="container_content_form">
+            <form id="form" action="#">
+                <div class="container_content_form_input">
+                    <div class="container_content_form_input_item">
+                        <label for="first_name">first name</label>
+                        <input required type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="container_content_form_input_item">
+                        <label for="last_name">last name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div class="container_content_form_input">
+                    <div class="container_content_form_input_item">
+                        <label for="email">email</label>
+                        <input required type="email" id="email" name="email">
+                    </div>
+                    <div class="container_content_form_input_item">
+                        <label for="phone_number">phone number</label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number, example: 123-456-7890" required>
+                    </div>
+                </div>
+                <div class="container_content_form_input">
+                    <div class="container_content_form_input_item">
+                        <label for="password">password</label>
+                        <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Password must contain at least 8 characters including upper/lowercase and numbers" required>
+                    </div>
+                    <div class="container_content_form_input_item">
+                        <label for="confirm_password">confirm password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container_footer">
+        <div class="container_footer_button">
+            <button type="submit" form="form" value="Submit">
+                Create Account
+            </button>
+        </div>
+        <div class="container_footer_content">
+            <p>Already have an account? <span>Log in</span></p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
