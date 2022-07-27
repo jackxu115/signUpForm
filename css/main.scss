@@ -91,6 +91,10 @@ body {
           label {
             text-transform: uppercase;
           }
+          input {
+            border: #000000 1px solid;
+            border-radius: 2px;
+          }
         }
       }
     }

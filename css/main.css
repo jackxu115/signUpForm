@@ -85,6 +85,10 @@ body {
 .container_content_form_input_item label {
   text-transform: uppercase;
 }
+.container_content_form_input_item input {
+  border: #000000 1px solid;
+  border-radius: 2px;
+}
 .container_footer {
   padding: 20px 60px;
 }
